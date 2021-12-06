@@ -1,0 +1,91 @@
+.uk-navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.uk-progress {
+    margin-top: 74px !important;
+    height: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #006698;
+    border-radius: 0;
+    width: 110%;
+}
+
+*::-webkit-scrollbar {
+    width: 0.65rem;
+    height: 0.65rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: rgba(33, 40, 50, 0.2);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(33, 40, 50, 0.5);
+    border-width: 0.125rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px;
+}
+
+.nav-pills {
+    flex-wrap: nowrap !important;
+    overflow: auto;
+    white-space: nowrap !important;
+    /* padding: .5rem!important;
+    margin: -0.5rem -0.5rem 1.5rem -0.5rem !important; */
+}
+
+.scroll-x {
+    -webkit-scroll-snap-type: x proximity;
+    -ms-scroll-snap-type: x proximity;
+    scroll-snap-type: x proximity;
+
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.scroll-x::before,
+.scroll-x::after {
+    content: '';
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.scroll-x::before {
+    left: 0;
+    background: linear-gradient(90deg, rgb(255 255 255) 0%, rgb(255 255 255 / 0%) 100%);
+}
+
+
+.scroll-x::after {
+    right: 0;
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255) 100%);
+}
+
+.uk-progress.progress-muted::-webkit-progress-value {
+    background-color: #006698;
+}
+
+.uk-car-badge {
+
+    background: #006698;
+}

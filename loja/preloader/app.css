@@ -1,0 +1,36 @@
+body.preloader {
+    overflow: hidden !important;
+}
+
+#preloader {
+    /* width: 382px;
+    height: 135px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.preloader nav,
+.preloader header,
+.preloader main,
+.preloader div,
+.preloader footer,
+.preloader .modal.show {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+nav,
+header,
+main,
+footer {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-transition: -webkit-filter .5s ease;
+    transition: -webkit-filter .5s ease;
+    -o-transition: filter .5s ease;
+    transition: filter .5s ease;
+    transition: filter .5s ease, -webkit-filter .5s ease;
+}
