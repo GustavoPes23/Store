@@ -2,15 +2,15 @@
 
 <html>
 
-<?php include "parts/head.php"; ?>
+<?php include "../../parts/head.php"; ?>
 
 <body class="preloader">
 
     <?php 
     
-    include "preloader/app.php";
+    include "../../preloader/app.php";
     
-    include "parts/navbar.php"; 
+    include "../../parts/navbar.php"; 
     
     ?>
 
@@ -284,9 +284,9 @@
 
 <?php 
 
-include "parts/footer.php"; 
+include "../../parts/footer.php"; 
 
-include "parts/scripts.php"; 
+include "../../parts/scripts.php"; 
 
 ?>
 

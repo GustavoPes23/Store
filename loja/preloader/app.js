@@ -10,7 +10,7 @@ $(document).ready(function() {
         $('#preloader').fadeOut('slow');
         $('body').removeClass('preloader');
 
-    }, 250);
+    }, 1000);
 
 });
 

@@ -3,12 +3,15 @@ body.preloader {
 }
 
 #preloader {
-    /* width: 382px;
-    height: 135px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
+    top: 50%;
+    left: 42%;
+    align-items: center;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 40;
 }
 
 .preloader nav,
@@ -33,4 +36,23 @@ footer {
     -o-transition: filter .5s ease;
     transition: filter .5s ease;
     transition: filter .5s ease, -webkit-filter .5s ease;
+}
+
+.loader{
+    width: 160px;
+    height: 160px;
+    border-top: 16px solid #006698;
+    border-right: 16px solid transparent;
+    border-radius: 50%;
+    animation: round 1s linear infinite;
+}
+.loader:before{
+    content: '';
+    background-color: #006698;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+@keyframes round{
+    100%{ transform: rotate(360deg); }
 }

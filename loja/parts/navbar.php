@@ -4,12 +4,14 @@
 
         <ul class="uk-navbar-nav">
 
-            <a href="#">
+            <a href="#" class="uk-margin-small-left">
+
                 <li>
                     
-                    <span uk-icon="icon: bag; ratio: 1.5" class="uk-margin-small-left" style="margin-top: 25px!important;"></span>
+                    <span uk-icon="icon: bag; ratio: 1.5"  style="margin-top: 25px!important;"></span>
 
                 </li>
+
             </a>
 
             <!-- <li class="uk-active"><a href="#">Início</a></li> -->
@@ -35,7 +37,7 @@
 
                         <li class="uk-nav-divider"></li>
 
-                        <li><a href="#">Item</a></li>
+                        <li><a href="categorias/calcados/">Item</a></li>
 
                         <li><a href="#">Item</a></li>
 
@@ -57,12 +59,11 @@
 
             <li><a href="#"><span uk-icon="icon: cart"></span><span class="uk-badge uk-car-badge">0</span></a></li>
 
-
             <li>
 
-                <a href="#"><span uk-icon="icon: user"></span></a>
+                <a href="#" class="uk-margin-small-right"><span uk-icon="icon: user"></span></a>
 
-                <div class="uk-navbar-dropdown">
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-user">
 
                     <ul class="uk-nav uk-navbar-dropdown-nav">
 
@@ -73,7 +74,6 @@
                         <li><a href="#">Entrar</a></li>
 
                         <li><a href="#">Criar</a></li>
-
 
                     </ul>
 
