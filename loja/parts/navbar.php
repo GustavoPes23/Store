@@ -4,17 +4,18 @@
 
         <ul class="uk-navbar-nav">
 
-            <a href="#">
+            <a href="<?= $url; ?>" class="uk-margin-small-right" style="margin-left: 21px!important;">
+
                 <li>
                     
-                    <span uk-icon="icon: bag; ratio: 1.5" class="uk-margin-small-left" style="margin-top: 25px!important;"></span>
+                    <span uk-icon="icon: bag; ratio: 1.5"  style="margin-top: 25px!important;"></span>
 
                 </li>
+                
             </a>
 
-            <!-- <li class="uk-active"><a href="#">Início</a></li> -->
+            <li id="categorias">
 
-            <li>
                 <a href="#">Categorias</a>
 
                 <div class="uk-navbar-dropdown">
@@ -35,14 +36,16 @@
 
                         <li class="uk-nav-divider"></li>
 
-                        <li><a href="#">Item</a></li>
+                        <li><a href="categorias/calcados/tenis" id="categoria-calcados-tenis">Tênis</a></li>
 
-                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Chinelos</a></li>
 
                         <li><a href="#">Item</a></li>
 
                     </ul>
+
                 </div>
+
             </li>
 
             <li><a href="#">Comunidade</a></li>
@@ -57,12 +60,11 @@
 
             <li><a href="#"><span uk-icon="icon: cart"></span><span class="uk-badge uk-car-badge">0</span></a></li>
 
-
             <li>
 
-                <a href="#"><span uk-icon="icon: user"></span></a>
+                <a href="#" class="uk-margin-small-right"><span uk-icon="icon: user"></span></a>
 
-                <div class="uk-navbar-dropdown">
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-user">
 
                     <ul class="uk-nav uk-navbar-dropdown-nav">
 
@@ -73,7 +75,6 @@
                         <li><a href="#">Entrar</a></li>
 
                         <li><a href="#">Criar</a></li>
-
 
                     </ul>
 
@@ -86,3 +87,5 @@
     </div>
 
 </nav>
+
+<progress id="js-progressbar" class="uk-progress progress-muted" value="1" max="100"></progress>

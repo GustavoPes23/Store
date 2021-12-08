@@ -8,8 +8,8 @@
 }
 
 .uk-progress {
-    margin-top: 74px !important;
-    height: 6px;
+    margin-top: 76px !important;
+    height: 4px;
     position: fixed;
     top: 0;
     left: 0;
@@ -86,6 +86,17 @@
 }
 
 .uk-car-badge {
-
     background: #006698;
+}
+
+.uk-navbar-dropdown {
+    width: auto;
+}
+
+.uk-button-card {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
 }

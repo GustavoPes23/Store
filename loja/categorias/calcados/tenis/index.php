@@ -1,6 +1,6 @@
 <?php
 
-include "config/caminho.php";
+include "../../../config/caminho.php";
 
 ?>
 
@@ -8,42 +8,31 @@ include "config/caminho.php";
 
 <html>
 
-<?php include "parts/head.php"; ?>
+<?php include "../../../parts/head.php"; ?>
 
 <body class="preloader">
 
     <?php
 
-    include "preloader/app.php";
+    include "../../../preloader/app.php";
 
-    include "parts/navbar.php";
+    include "../../../parts/navbar.php";
 
     ?>
 
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; autoplay:true; autoplay-interval: 10000;">
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@s uk-text-center uk-padding-large uk-margin-large-top" uk-grid>
 
-        <ul class="uk-slideshow-items">
+        <?php $arrayItens = array(['Nike', '20,90'], ['Adidas', '30,90'], ['Olympikus', '10,90'], ['Puma', '20,90'], ['Nike', '20,90'], ['Adidas', '30,90'], ['Olympikus', '10,90'], ['Puma', '20,90']);
 
-            <?php
+        foreach ($arrayItens as $auxItens) { ?>
 
-            $imgArray = array(['img01', 'Calçados'], ['img02', 'Camisetas'], ['img03', 'Calças'], ['img04', 'Outros']);
+            <div>
 
-            foreach ($imgArray as $auxImg) {
+                <div class="uk-card uk-card-default uk-card-body"><?= $auxItens[0]; ?></div>
 
-            ?>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="img/index/<?= $auxImg[0]; ?>.jpg" alt="" uk-cover>
-                    </div>
-                </li>
+            </div>
 
-            <?php } ?>
-
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        <?php } ?>
 
     </div>
 
@@ -51,7 +40,7 @@ include "config/caminho.php";
 
     <h2 class=" uk-text-center uk-margin-large uk-text-bold"><span>Destaques</span></h2>
 
-    <div class="uk-child-width-1-5@m uk-column-1-3 uk-flex uk-flex-center " uk-grid>
+    <div class="uk-child-width-1-3@m uk-column-1-2 uk-flex uk-flex-center " uk-grid>
 
         <?php
 
@@ -239,16 +228,18 @@ include "config/caminho.php";
 
     </div>
 
-    <?php include "parts/contato.php"; ?>
+    <?php include "../../../parts/contato.php"; ?>
 
 </body>
 
 <?php
 
-include "parts/footer.php";
+include "../../../parts/footer.php";
 
-include "parts/scripts.php";
+include "../../../parts/scripts.php";
 
 ?>
+
+<script src="js/carrega.js"></script>
 
 </html>
